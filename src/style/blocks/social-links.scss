@@ -1,0 +1,23 @@
+.social-links {
+  display: flex;
+  font-size: 0;
+}
+.social-link {
+  flex-grow: 1;
+  height: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.social-link:hover {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.social-link:active {
+  background-color: #252525;
+  border: 1px solid #252525;
+}
+
+@media ($desktop-width) {
+  .social-link {
+    margin-right: 5px;
+    height: 48px;
+  }
+}
