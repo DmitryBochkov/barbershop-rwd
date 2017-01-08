@@ -298,5 +298,23 @@
       color: #000;
       background-color: #fff;
     }
+    svg {
+      left: -15px;
+      top: 2px;
+      opacity: 1;
+    }
+  }
+  .main-nav__user-login:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .main-nav__user-login:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  .main-nav__user-login:hover svg .cls-1 {
+    opacity: 0.5;
+  }
+  .main-nav__user-login:active svg .cls-1 {
+    opacity: 0.1;
+    fill: #000;
   }
 }
