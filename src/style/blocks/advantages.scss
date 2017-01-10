@@ -1,6 +1,5 @@
 .advantages__wrapper {
   @include container-fluid;
-  min-height: 320px; /*temp*/
   padding-top: 30px;
 }
 .advantages__items {
@@ -9,12 +8,17 @@
   list-style: none;
 }
 .advantages__item {
-  min-height: 145px; /*temp*/
+  position: relative;
   margin-bottom: 23px;
   padding: 0 45px;
   padding-top: 125px;
   color: #f7f4f1;
   text-align: center;
+}
+.advantages__item--fast:before {
+  content: '';
+  position: absolute;
+  @include sprite($advantage-1-illustration);
 }
 .advantages__item h3 {
   font-size: 30px;

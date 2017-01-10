@@ -7,6 +7,7 @@ var gulp = require('gulp'),
     cssmin = require('gulp-clean-css'),
     imagemin = require('gulp-imagemin'),
     rimraf = require('rimraf'),
+    spritesmith = require('gulp.spritesmith'),
     browserSync = require("browser-sync"),
     reload = browserSync.reload;
 
@@ -112,6 +113,17 @@ gulp.task('watch', function(){
   watch([path.watch.fonts], function(event, cb) {
     gulp.start('fonts:build');
   });
+});
+
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('src/img/sprites/*.png')
+    .pipe(spritesmith({
+      imgName: '../img/sprite.png',
+      cssName: '_sprite.scss',
+      padding: 5
+    }));
+  spriteData.img.pipe(gulp.dest('src/img'));
+  spriteData.css.pipe(gulp.dest('src/style'));
 });
 
 gulp.task('webserver', function () {

@@ -1,0 +1,261 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$advantage-1-illustration-name: 'advantage-1-illustration';
+$advantage-1-illustration-x: 147px;
+$advantage-1-illustration-y: 0px;
+$advantage-1-illustration-offset-x: -147px;
+$advantage-1-illustration-offset-y: 0px;
+$advantage-1-illustration-width: 95px;
+$advantage-1-illustration-height: 94px;
+$advantage-1-illustration-total-width: 372px;
+$advantage-1-illustration-total-height: 308px;
+$advantage-1-illustration-image: '../img/sprite.png';
+$advantage-1-illustration: (147px, 0px, -147px, 0px, 95px, 94px, 372px, 308px, '../img/sprite.png', 'advantage-1-illustration', );
+$advantage-2-illustration-name: 'advantage-2-illustration';
+$advantage-2-illustration-x: 100px;
+$advantage-2-illustration-y: 144px;
+$advantage-2-illustration-offset-x: -100px;
+$advantage-2-illustration-offset-y: -144px;
+$advantage-2-illustration-width: 95px;
+$advantage-2-illustration-height: 88px;
+$advantage-2-illustration-total-width: 372px;
+$advantage-2-illustration-total-height: 308px;
+$advantage-2-illustration-image: '../img/sprite.png';
+$advantage-2-illustration: (100px, 144px, -100px, -144px, 95px, 88px, 372px, 308px, '../img/sprite.png', 'advantage-2-illustration', );
+$advantage-3-illustration-name: 'advantage-3-illustration';
+$advantage-3-illustration-x: 0px;
+$advantage-3-illustration-y: 144px;
+$advantage-3-illustration-offset-x: 0px;
+$advantage-3-illustration-offset-y: -144px;
+$advantage-3-illustration-width: 95px;
+$advantage-3-illustration-height: 91px;
+$advantage-3-illustration-total-width: 372px;
+$advantage-3-illustration-total-height: 308px;
+$advantage-3-illustration-image: '../img/sprite.png';
+$advantage-3-illustration: (0px, 144px, 0px, -144px, 95px, 91px, 372px, 308px, '../img/sprite.png', 'advantage-3-illustration', );
+$beard-admiral-name: 'beard-admiral';
+$beard-admiral-x: 247px;
+$beard-admiral-y: 102px;
+$beard-admiral-offset-x: -247px;
+$beard-admiral-offset-y: -102px;
+$beard-admiral-width: 52px;
+$beard-admiral-height: 49px;
+$beard-admiral-total-width: 372px;
+$beard-admiral-total-height: 308px;
+$beard-admiral-image: '../img/sprite.png';
+$beard-admiral: (247px, 102px, -247px, -102px, 52px, 49px, 372px, 308px, '../img/sprite.png', 'beard-admiral', );
+$beard-boyar-name: 'beard-boyar';
+$beard-boyar-x: 247px;
+$beard-boyar-y: 0px;
+$beard-boyar-offset-x: -247px;
+$beard-boyar-offset-y: 0px;
+$beard-boyar-width: 57px;
+$beard-boyar-height: 97px;
+$beard-boyar-total-width: 372px;
+$beard-boyar-total-height: 308px;
+$beard-boyar-image: '../img/sprite.png';
+$beard-boyar: (247px, 0px, -247px, 0px, 57px, 97px, 372px, 308px, '../img/sprite.png', 'beard-boyar', );
+$beard-icon-name: 'beard-icon';
+$beard-icon-x: 309px;
+$beard-icon-y: 209px;
+$beard-icon-offset-x: -309px;
+$beard-icon-offset-y: -209px;
+$beard-icon-width: 23px;
+$beard-icon-height: 21px;
+$beard-icon-total-width: 372px;
+$beard-icon-total-height: 308px;
+$beard-icon-image: '../img/sprite.png';
+$beard-icon: (309px, 209px, -309px, -209px, 23px, 21px, 372px, 308px, '../img/sprite.png', 'beard-icon', );
+$beard-polar-name: 'beard-polar';
+$beard-polar-x: 309px;
+$beard-polar-y: 0px;
+$beard-polar-offset-x: -309px;
+$beard-polar-offset-y: 0px;
+$beard-polar-width: 63px;
+$beard-polar-height: 78px;
+$beard-polar-total-width: 372px;
+$beard-polar-total-height: 308px;
+$beard-polar-image: '../img/sprite.png';
+$beard-polar: (309px, 0px, -309px, 0px, 63px, 78px, 372px, 308px, '../img/sprite.png', 'beard-polar', );
+$beard-wise-man-name: 'beard-wise-man';
+$beard-wise-man-x: 309px;
+$beard-wise-man-y: 83px;
+$beard-wise-man-offset-x: -309px;
+$beard-wise-man-offset-y: -83px;
+$beard-wise-man-width: 45px;
+$beard-wise-man-height: 104px;
+$beard-wise-man-total-width: 372px;
+$beard-wise-man-total-height: 308px;
+$beard-wise-man-image: '../img/sprite.png';
+$beard-wise-man: (309px, 83px, -309px, -83px, 45px, 104px, 372px, 308px, '../img/sprite.png', 'beard-wise-man', );
+$beard-woodcutter-name: 'beard-woodcutter';
+$beard-woodcutter-x: 0px;
+$beard-woodcutter-y: 240px;
+$beard-woodcutter-offset-x: 0px;
+$beard-woodcutter-offset-y: -240px;
+$beard-woodcutter-width: 58px;
+$beard-woodcutter-height: 68px;
+$beard-woodcutter-total-width: 372px;
+$beard-woodcutter-total-height: 308px;
+$beard-woodcutter-image: '../img/sprite.png';
+$beard-woodcutter: (0px, 240px, 0px, -240px, 58px, 68px, 372px, 308px, '../img/sprite.png', 'beard-woodcutter', );
+$check-icon-name: 'check-icon';
+$check-icon-x: 271px;
+$check-icon-y: 156px;
+$check-icon-offset-x: -271px;
+$check-icon-offset-y: -156px;
+$check-icon-width: 22px;
+$check-icon-height: 16px;
+$check-icon-total-width: 372px;
+$check-icon-total-height: 308px;
+$check-icon-image: '../img/sprite.png';
+$check-icon: (271px, 156px, -271px, -156px, 22px, 16px, 372px, 308px, '../img/sprite.png', 'check-icon', );
+$clock-illustration-name: 'clock illustration';
+$clock-illustration-x: 0px;
+$clock-illustration-y: 0px;
+$clock-illustration-offset-x: 0px;
+$clock-illustration-offset-y: 0px;
+$clock-illustration-width: 142px;
+$clock-illustration-height: 139px;
+$clock-illustration-total-width: 372px;
+$clock-illustration-total-height: 308px;
+$clock-illustration-image: '../img/sprite.png';
+$clock-illustration: (0px, 0px, 0px, 0px, 142px, 139px, 372px, 308px, '../img/sprite.png', 'clock illustration', );
+$facebook-icon-small-name: 'facebook-icon-small';
+$facebook-icon-small-x: 359px;
+$facebook-icon-small-y: 83px;
+$facebook-icon-small-offset-x: -359px;
+$facebook-icon-small-offset-y: -83px;
+$facebook-icon-small-width: 10px;
+$facebook-icon-small-height: 21px;
+$facebook-icon-small-total-width: 372px;
+$facebook-icon-small-total-height: 308px;
+$facebook-icon-small-image: '../img/sprite.png';
+$facebook-icon-small: (359px, 83px, -359px, -83px, 10px, 21px, 372px, 308px, '../img/sprite.png', 'facebook-icon-small', );
+$insta-icon-small-name: 'insta-icon-small';
+$insta-icon-small-x: 247px;
+$insta-icon-small-y: 156px;
+$insta-icon-small-offset-x: -247px;
+$insta-icon-small-offset-y: -156px;
+$insta-icon-small-width: 19px;
+$insta-icon-small-height: 19px;
+$insta-icon-small-total-width: 372px;
+$insta-icon-small-total-height: 308px;
+$insta-icon-small-image: '../img/sprite.png';
+$insta-icon-small: (247px, 156px, -247px, -156px, 19px, 19px, 372px, 308px, '../img/sprite.png', 'insta-icon-small', );
+$mustache-icon-name: 'mustache-icon';
+$mustache-icon-x: 309px;
+$mustache-icon-y: 192px;
+$mustache-icon-offset-x: -309px;
+$mustache-icon-offset-y: -192px;
+$mustache-icon-width: 45px;
+$mustache-icon-height: 12px;
+$mustache-icon-total-width: 372px;
+$mustache-icon-total-height: 308px;
+$mustache-icon-image: '../img/sprite.png';
+$mustache-icon: (309px, 192px, -309px, -192px, 45px, 12px, 372px, 308px, '../img/sprite.png', 'mustache-icon', );
+$scissors-icon-name: 'scissors-icon';
+$scissors-icon-x: 337px;
+$scissors-icon-y: 209px;
+$scissors-icon-offset-x: -337px;
+$scissors-icon-offset-y: -209px;
+$scissors-icon-width: 21px;
+$scissors-icon-height: 20px;
+$scissors-icon-total-width: 372px;
+$scissors-icon-total-height: 308px;
+$scissors-icon-image: '../img/sprite.png';
+$scissors-icon: (337px, 209px, -337px, -209px, 21px, 20px, 372px, 308px, '../img/sprite.png', 'scissors-icon', );
+$vk-icon-small-name: 'vk-icon-small';
+$vk-icon-small-x: 247px;
+$vk-icon-small-y: 180px;
+$vk-icon-small-offset-x: -247px;
+$vk-icon-small-offset-y: -180px;
+$vk-icon-small-width: 15px;
+$vk-icon-small-height: 17px;
+$vk-icon-small-total-width: 372px;
+$vk-icon-small-total-height: 308px;
+$vk-icon-small-image: '../img/sprite.png';
+$vk-icon-small: (247px, 180px, -247px, -180px, 15px, 17px, 372px, 308px, '../img/sprite.png', 'vk-icon-small', );
+$spritesheet-width: 372px;
+$spritesheet-height: 308px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($advantage-1-illustration, $advantage-2-illustration, $advantage-3-illustration, $beard-admiral, $beard-boyar, $beard-icon, $beard-polar, $beard-wise-man, $beard-woodcutter, $check-icon, $clock-illustration, $facebook-icon-small, $insta-icon-small, $mustache-icon, $scissors-icon, $vk-icon-small, );
+$spritesheet: (372px, 308px, '../img/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
