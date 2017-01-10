@@ -1,0 +1,40 @@
+.triangle-down {
+  height: 40px;
+}
+.advantages .triangle-down {
+  background: #f8f5f2;
+}
+.advantages #bigTriangleColor path {
+  fill: #292929;
+  stroke: #292929;
+  stroke-width: 2;
+}
+.reviews .triangle-down {
+  background: #292929;
+}
+.reviews #bigTriangleColor path {
+  fill: #f8f5f2;
+  stroke: #f8f5f2;
+  stroke-width: 2;
+}
+
+@media ($tablet-width) {
+  .triangle-down {
+    height: 43px;
+  }
+  .triangle-down svg {
+    height: 43px;
+  }
+  .reviews .triangle-down {
+    display: none;
+  }
+}
+
+@media ($desktop-width) {
+  .triangle-down {
+    height: 60px;
+  }
+  .triangle-down svg {
+    height: 60px;
+  }
+}
