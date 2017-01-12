@@ -40,3 +40,9 @@
 .reviews .slider__toggle--active::before {
   background: #353535;
 }
+
+.slider {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}

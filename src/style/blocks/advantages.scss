@@ -8,6 +8,7 @@
   list-style: none;
 }
 .advantages__item {
+  min-height: 201px;
   position: relative;
   padding: 0 45px;
   padding-top: 95px;
@@ -28,11 +29,11 @@
 .advantages__item h3:before {
   content: '';
   position: absolute;
+  top: -125px;
+  margin: 0 auto;
 }
 .advantages__item--fast h3:before {
   @include sprite($advantage-1-illustration);
-  top: -125px;
-  margin: 0 auto;
 }
 .advantages__item--cool h3:before {
   @include sprite($advantage-2-illustration);
