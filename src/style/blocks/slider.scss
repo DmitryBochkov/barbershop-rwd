@@ -1,4 +1,42 @@
-.slider__input,
-.slider__toggles {
+.slider__input {
   display: none;
+}
+.slider__toggles {
+  text-align: center;
+  line-height: 12px;
+}
+.slider__toggle {
+  width: 2px;
+  height: 2px;
+  padding: 8px;
+  position: relative;
+  display: inline-block;
+}
+.slider__toggle::before {
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 6px;
+  border: 1px solid #fff;
+  background: #242424;
+  transform: rotate(45deg);
+  top: 6px;
+  left: 6px;
+}
+.slider__toggle:hover {
+  cursor: pointer;
+}
+.slider__toggle--2 {
+  margin-left: 11px;
+  margin-right: 11px;
+}
+.slider__toggle--active::before {
+  background: #fff;
+}
+.reviews .slider__toggle::before {
+  border: 1px solid #353535;
+  background-color: #f8f5f2;
+}
+.reviews .slider__toggle--active::before {
+  background: #353535;
 }

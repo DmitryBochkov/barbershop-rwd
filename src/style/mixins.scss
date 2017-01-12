@@ -60,6 +60,7 @@ box-shadow: $shadow;
   }
 }
 @mixin container-fluid {
+  min-width: 320px;
   width: auto;
   @media ($tablet-width) {
     width: 84%;

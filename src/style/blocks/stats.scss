@@ -92,7 +92,6 @@
     margin-top: -184px;
   }
   .stats__header {
-    // @include clearfix;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -103,40 +102,34 @@
     &::before {
       content: '';
       position: absolute;
-      top: 27px;
-      left: -15px;
-      border: 15px solid transparent;
-      border-bottom-color: #fff;
-      transform: rotate(45deg);
+      top: 41px;
+      left: -19px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 20px 20px 0;
+      border-color: transparent #fff;
     }
   }
   .stats__slogan {
-    // float: left;
     width: 50%;
     padding: 0;
-    // padding-left: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
     font-size: 40px;
     line-height: 40px;
     text-align: left;
     text-transform: none;
   }
   .stats__intro {
-    // float: right;
     width: 37.5%;
     padding: 0;
     padding-top: 4px;
     padding-left: 30px;
-    // padding-right: 80px;
     text-align: left;
   }
   .stats__legend--top {
     display: block;
     width: 50%;
-    // float: left;
-    // clear: left;
-    // width: 280px;
-    // padding-left: 40px;
     color: rgba(0, 0, 0, 0.3);
   }
   .stats__legend--bottom {
@@ -181,37 +174,32 @@
 }
 @media ($desktop-width) {
   .stats {
-    // @include clearfix;
     display: flex;
     margin-top: -159px;
   }
   .stats__header {
-    // float: left;
     flex-direction: column;
-    width: 240px;
+    width: 235px;
     padding-left: 40px;
-    padding-right: 40px;
+    padding-right: 45px;
     &::before {
-      top: 22px;
+      top: 36px;
+      left: -23px;
+      border-width: 0 25px 25px 0;
     }
   }
   .stats__slogan {
-    // float: none;
     width: auto;
     margin-bottom: 42px;
-    // padding-left: 0;
   }
   .stats__intro {
-    // float: none;
     width: auto;
     margin-bottom: 32px;
     padding: 0;
   }
   .stats__legend--top {
-    // float: none;
     width: auto;
-    // padding-left: 0;
-    margin-top: auto;
+    margin-top: 0;
   }
   .stats__items {
     // float: left;

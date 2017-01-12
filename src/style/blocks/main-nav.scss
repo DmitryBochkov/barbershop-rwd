@@ -96,9 +96,6 @@
     border-top-color: #6a4d38;
   }
 }
-.main-nav__user-items {
-  // min-height: 55px;
-}
 .main-nav__user-login {
   display: block;
   padding: 17px 21px;
@@ -178,7 +175,6 @@
   }
   .main-nav__wrapper {
     @include container-fluid;
-    // @include clearfix;
     display: flex;
     justify-content: space-between;
   }
@@ -186,8 +182,6 @@
     display: none;
   }
   .main-nav__items {
-    // float: left;
-    // width: 570px;
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
@@ -217,7 +211,7 @@
   .main-nav__item a {
     padding: 0;
     padding-top: 25px;
-    padding-bottom: 23px;
+    padding-bottom: 25px;
     background: none;
     border: none;
   }

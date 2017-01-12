@@ -5,7 +5,7 @@
 }
 .news__wrapper {
   @include container-fluid;
-  padding-top: 67px;
+  padding-top: 28px;
   padding-bottom: 28px;
 }
 .news__title {
@@ -86,10 +86,11 @@
 }
 .news__item {
   position: relative;
-  margin: 0 20px;
-  margin-bottom: 16px;
-  padding-bottom: 18px;
+  margin: 0 15px 16px 20px;
   padding-left: 70px;
+}
+.news__item p {
+  margin-bottom: 15px;
 }
 .news__item:first-child {
   border-bottom: 1px solid #e5ddd5;
@@ -103,8 +104,8 @@
 
 @media ($tablet-width) {
   .news {
-    padding-top: 90px;
-    padding-bottom: 28px;
+    padding-top: 48px;
+    padding-bottom: 30px;
   }
   .news__wrapper {
     padding: 0;
@@ -127,6 +128,9 @@
     margin: 0;
     padding: 0 30px;
     padding-left: 70px;
+    .news__item--hidden-content {
+      display: none;
+    }
   }
   .news__item p {
     margin: 0;
@@ -137,7 +141,7 @@
 }
 @media ($desktop-width) {
   .news {
-    padding-top: 88px;
+    padding-top: 65px;
     padding-bottom: 32px;
   }
   .news__title {

@@ -5,7 +5,7 @@
 .reviews__wrapper {
   @include container-fluid;
   padding-top: 25px;
-  padding-bottom: 28px;
+  padding-bottom: 8px;
 }
 .reviews__header {
   margin: 0;
@@ -29,21 +29,24 @@
 }
 .reviews__author-foto {
   display: inline-block;
-  width: 17.857%;
   vertical-align: top;
+}
+.reviews__author-foto img {
+  display: block;
+  margin-top: 13px;
 }
 .reviews__content {
   display: inline-block;
   width: 71.205%;
   vertical-align: top;
-  padding-left: 6.25%;
-  padding-right: 4.6875%;
+  padding-left: 6.275%;
+  padding-right: 4.675%;
   line-height: 27px;
   font-size: 18px;
 }
 .reviews__author-name {
   display: block;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -55,15 +58,15 @@
 
 @media ($tablet-width) {
   .reviews {
-    padding-top: 40px;
+    padding-top: 23px;
   }
   .reviews__wrapper {
     position: relative;
-    padding-bottom: 90px;
+    padding-bottom: 72px;
   }
   .reviews__header {
     margin-right: 200px;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
     text-align: left;
     font-size: 40px;
   }
@@ -79,6 +82,12 @@
   .reviews__author-foto {
     width: 25.83%;
   }
+  .reviews__author-foto img {
+    width: 80px;
+    height: 80px;
+    margin-left: 23%;
+    margin-top: 9px;
+  }
   .reviews__content {
     width: 70.169%;
     padding-left: 0;
@@ -93,7 +102,7 @@
     border: 1px solid #e5ddd5;
     font-size: 0;
     background-color: #f8f5f2;
-    top: 110px;
+    top: 100px;
     cursor: pointer;
   }
   .reviews__prev:hover,
@@ -113,8 +122,11 @@
 }
 
 @media ($desktop-width) {
+  .reviews {
+    padding-top: 29px;
+  }
   .reviews__wrapper {
-    padding-bottom: 28px;
+    padding-bottom: 98px;
   }
   .reviews__header {
     margin-left: 70px;
@@ -128,10 +140,16 @@
   .reviews__author-foto {
     width: 249px;
   }
+  .reviews__author-foto img {
+    width: 249px;
+    height: 160px;
+    margin-left: 0;
+    margin-top: -30px;
+  }
   .reviews__content {
     width: 449px;
     padding: 0;
-    padding-right: 120px;
+    padding-left: 70px;
   }
   .reviews__prev,
   .reviews__next {

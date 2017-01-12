@@ -1,5 +1,8 @@
 .triangle-down {
-  height: 40px;
+  height: 45px;
+}
+.triangle-down svg {
+  height: 45px;
 }
 .advantages .triangle-down {
   background: #f8f5f2;
@@ -20,10 +23,13 @@
 
 @media ($tablet-width) {
   .triangle-down {
-    height: 43px;
+    height: 50px;
   }
   .triangle-down svg {
-    height: 43px;
+    height: 50px;
+  }
+  .advantages #bigTriangleColor path {
+    d: path('M-5 0 L50 95 L105 0 Z');
   }
   .reviews .triangle-down {
     display: none;
@@ -36,5 +42,8 @@
   }
   .triangle-down svg {
     height: 60px;
+  }
+  .advantages #bigTriangleColor path {
+    d: path("M0 0 L50 100 L100 0 Z");
   }
 }
