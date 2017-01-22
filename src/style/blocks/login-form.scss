@@ -1,0 +1,217 @@
+.login-form {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #f8f5f2;
+  box-shadow: 0 30px 50px rgba(0, 1, 1, 0.75);
+  color: #000;
+  line-height: 30px;
+  font-size: 18px;
+  padding-top: 30px;
+  overflow: hidden;
+  position: relative;
+  z-index: 30;
+}
+.login-form--nojs {
+  display: block;
+}
+.login-form--opened {
+  display: block;
+  position: fixed;
+  top: 135px;
+  left: 50%;
+  margin-left: -160px;
+}
+.login-form--closed {
+  display: none;
+}
+.login-form form {
+  width: 280px;
+  margin: 0 auto;
+}
+.login-form__title {
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+}
+.input-login,
+.input-password {
+  padding: 14px 40px 14px 18px;
+  border: 1px solid #e5ddd5;
+  width: 220px;
+  margin-bottom: 6px;
+}
+.input-login:hover,
+.input-password:hover {
+  border-color: #d5c9bd;
+}
+.input-login:focus,
+.input-password:focus {
+  border-color: #999;
+  outline: none;
+}
+.input-login-icon,
+.password-login-icon {
+  position: relative;
+}
+.input-login-icon::after,
+.password-login-icon::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 15px;
+}
+.input-login-icon::after {
+  @include sprite($login-icon);
+}
+.password-login-icon::after {
+  @include sprite($pssword-icon);
+}
+.input-password {
+  margin-bottom: 28px;
+}
+input::-webkit-input-placeholder {
+  font-family: 'PT Sans Narrow',Arial,sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+input::-moz-placeholder {
+  font-family: 'PT Sans Narrow',Arial,sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+input:-moz-placeholder {
+  font-family: 'PT Sans Narrow',Arial,sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+input:-ms-input-placeholder {
+  font-family: 'PT Sans Narrow',Arial,sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+.login-form__content {
+  line-height: 27px;
+  text-align: center;
+}
+.login-form {
+  label {
+    float: left;
+    cursor: pointer;
+    position: relative;
+    padding-left: 45px;
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 31px;
+      height: 31px;
+      border: 1px solid #e5ddd5;
+      top: 0;
+      left: 0;
+    }
+    &:hover::before {
+      border: 1px solid #d5c9bd;
+    }
+    &:active::before {
+      background: #d5c9bd url(../img/check-icon.png) no-repeat;
+      background-position: 5px 7px;
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"]:checked + label:before {
+    background: url(../img/check-icon.png) no-repeat;
+    background-position: 5px 7px;
+  }
+  input[type="checkbox"]:checked:active + label:before {
+    background: #d5c9bd;
+  }
+}
+.forgot-password {
+  float: right;
+  color: #000;
+}
+.btn--login-form,
+.close-btn {
+  width: 130px;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 37px;
+}
+.btn--login-form {
+  float: left;
+  background-color: #826550;
+  color: #fff;
+}
+.btn--login-form:hover {
+  background-color: #6a4d38;
+}
+.btn--login-form:active {
+  background-color: #6a4d38;
+  color: rgba(255, 255, 255, 0.3);
+}
+.btn--login-form:disabled {
+  background-color: #aeaeae;
+}
+.close-btn {
+  float: right;
+  background-color: #f8f5f2;
+}
+
+@media ($tablet-width) {
+  .login-form {
+    width: 460px;
+    padding-top: 50px;
+    overflow: initial;
+  }
+  .login-form--opened {
+    margin-left: -230px;
+  }
+  .login-form form {
+    width: 320px;
+  }
+  .login-form__content {
+    margin-bottom: 28px;
+  }
+  .input-login,
+  .input-password {
+    padding: 24px 40px 24px 18px;
+    width: 260px;
+  }
+  .btn--login-form {
+    width: 320px;
+    clear: both;
+    margin-bottom: 58px;
+  }
+  .close-btn {
+    position: absolute;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    top: 45px;
+    right: -67px;
+    margin: 0;
+    padding: 0;
+  }
+  .close-btn::before,
+  .close-btn::after {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 2px;
+    background: #fff;
+    border-radius: 1px;
+    top: 10px;
+    left: 2px;
+  }
+  .close-btn::before {
+    transform: rotate(45deg);
+  }
+  .close-btn::after {
+    transform: rotate(-45deg);
+  }
+}

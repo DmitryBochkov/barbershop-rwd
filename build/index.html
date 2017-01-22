@@ -28,7 +28,7 @@
           </ul>
           <ul class="main-nav__user-items">
             <li class="main-nav__user-item">
-              <a class="main-nav__user-login" href="#0" title="Войти">
+              <a id="user-login" class="main-nav__user-login" href="#login-form" title="Войти">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
                   <defs>
                     <style>
@@ -80,25 +80,27 @@
       <section class="advantages">
         <div class="advantages__wrapper">
           <ul class="advantages__items slider">
-            <li class="advantages__item advantages__item--fast slider__item">
+            <li class="advantages__item advantages__item--fast slider__item fade">
               <h3 class="advantages__item-title">Быстро</h3>
               <p>
                 Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки
               </p>
             </li>
-            <li class="advantages__item advantages__item--cool slider__item">
+            <li class="advantages__item advantages__item--cool slider__item fade">
               <h3 class="advantages__item-title">Круто</h3>
               <p>
                 Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
               </p>
             </li>
-            <li class="advantages__item advantages__item--expensive slider__item">
+            <li class="advantages__item advantages__item--expensive slider__item fade">
               <h3 class="advantages__item-title">Дорого</h3>
               <p>
                 Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?
               </p>
             </li>
           </ul>
+          <a class="prev">&#10094;</a>
+          <a class="next">&#10095;</a>
           <div class="slider__toggles">
             <span class="slider__toggle slider__toggle--1 slider__toggle--active"></span>
             <span class="slider__toggle slider__toggle--2"></span>
@@ -149,9 +151,9 @@
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="reviews__header">Отзывы о нас</h2>
-          <a class="btn btn--reviews" href="#">Оставить свой</a>
+          <a class="btn btn--reviews" href="#0">Оставить свой</a>
           <div class="reviews__items">
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item fade">
               <div class="reviews__author-foto">
                 <picture>
                   <source media="(min-width: 1200px)" width="249" height="160" srcset="img/pic-travis-big.jpg">
@@ -162,34 +164,42 @@
               <div class="reviews__content">
                 <cite class="reviews__author-name">Трэвис Бабских</cite>
                 <p>
-                  Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+                  Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку! Спасибо за лысину!
                 </p>
               </div>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item fade">
               <div class="reviews__author-foto">
-                <img src="img/pic-travis.jpg" width="50" height="33" alt="Трэвис Бабских">
+                <picture>
+                  <source media="(min-width: 1200px)" width="249" height="160" srcset="img/pic-travis-big.jpg">
+                  <source media="(min-width: 768px)" srcset="img/pic-travis-m.png">
+                  <img src="img/pic-travis-small.jpg" width="50" height="33" alt="Трэвис Бабских">
+                </picture>
               </div>
               <div class="reviews__content">
-                <cite class="reviews__author-name">Трэвис Бабских</cite>
+                <cite class="reviews__author-name">Дмитрий Архипов</cite>
+                <p>
+                  Спасибо за татуировку! Был проездом в Москве, заскочил побриться, чтобы было видно новую лысину!
+                </p>
+              </div>
+            </blockquote>
+            <blockquote class="reviews__item fade">
+              <div class="reviews__author-foto">
+                <picture>
+                  <source media="(min-width: 1200px)" width="249" height="160" srcset="img/pic-travis-big.jpg">
+                  <source media="(min-width: 768px)" srcset="img/pic-travis-m.png">
+                  <img src="img/pic-travis-small.jpg" width="50" height="33" alt="Трэвис Бабских">
+                </picture>
+              </div>
+              <div class="reviews__content">
+                <cite class="reviews__author-name">Модест Корнилов</cite>
                 <p>
                   Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
                 </p>
               </div>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <div class="reviews__author-foto">
-                <img src="img/pic-travis.jpg" width="50" height="33" alt="Трэвис Бабских">
-              </div>
-              <div class="reviews__content">
-                <cite class="reviews__author-name">Трэвис Бабских</cite>
-                <p>
-                  Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
-                </p>
-              </div>
-            </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__prev" type="button"></span></button>
+            <button class="reviews__next" type="button"></span></button>
             <div class="slider__toggles">
               <span class="slider__toggle slider__toggle--1 slider__toggle--active"></span>
               <span class="slider__toggle slider__toggle--2"></span>
@@ -231,6 +241,20 @@
         </section>
       </div>
     </footer>
+    <div id="login-form" class="login-form login-form--closed login-form--nojs">
+      <form action="#" method="post">
+        <h2 class="login-form__title">ЛИЧНЫЙ КАБИНЕТ</h2>
+        <p class="login-form__content">Введите свой логин и пароль, чтобы войти</p>
+        <span class="input-login-icon"><input class="input-login" type="text" name="login" placeholder="Логин" required></span>
+        <span class="password-login-icon"><input class="input-password" type="password" name="password" placeholder="Пароль" required></span>
+        <input id="remember" type=checkbox name="remember">
+        <label for="remember">Запомните меня</label>
+        <a href="#0" class="forgot-password">Я забыл пароль!</a>
+        <input class="btn btn--login-form" type="submit" name="submit" value="Войти">
+        <button id="close-btn" class="btn close-btn">ЗАКРЫТЬ</button>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
     <script src="js/main.js"></script>
   </body>
 </html>

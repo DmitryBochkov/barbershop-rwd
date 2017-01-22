@@ -105,6 +105,29 @@
     top: 100px;
     cursor: pointer;
   }
+  .reviews__prev::before,
+  .reviews__next::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    top: 73px;
+    left: 19px;
+  }
+  .reviews__prev::before {
+    border-right: 12px solid #000;
+  }
+  .reviews__prev:hover::before {
+    border-right: 12px solid #958c84;
+  }
+  .reviews__next::before {
+    border-left: 12px solid #000;
+  }
+  .reviews__next:hover::before {
+    border-left: 12px solid #958c84;
+  }
   .reviews__prev:hover,
   .reviews__next:hover {
     border-color: #d5c9bd;
