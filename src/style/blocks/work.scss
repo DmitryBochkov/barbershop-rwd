@@ -1,0 +1,207 @@
+.work {
+  @include clearfix;
+  background-color: $bg-lightgrey;
+  color: #000;
+  padding-bottom: 10px;
+}
+.work__wrapper {
+  @include container-fluid;
+}
+.work__item {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  img {
+    display: block;
+  }
+}
+.work__item-content{
+  border: 1px solid #e5ddd5;
+  border-top: none;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+.work__item--featured .work__item-content{
+  padding-bottom: 10px;
+}
+
+.work__feedback-author {
+  display: block;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27px;
+  font-style: normal;
+}
+.work__feedback-content {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.work__services {
+  font-size: 0;
+}
+.work__service-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 80px;
+  padding-left: 35px;
+  font-size: 16px;
+  line-height: 37px;
+  height: 37px;
+  text-transform: uppercase;
+}
+.work__service-item::before {
+  content: '';
+  position: absolute;
+}
+.work__service-item--haircut::before {
+  @include sprite($scissors-icon);
+  top: 7px;
+  left: 0px;
+}
+.work__service-item--shaving::before {
+  @include sprite($beard-icon);
+  top: 7px;
+  left: 0px;
+}
+.work__service-item--moustache::before {
+  @include sprite($mustache-icon);
+  top: 11px;
+  left: -15px;
+}
+
+@media ($tablet-width) {
+  .work {
+    padding-bottom: 40px;
+  }
+  .work__item {
+    @include clearfix;
+    width: 640px;
+  }
+  .work__item-image {
+    float: left;
+    width: 270px;
+    height: 293px;
+    overflow: hidden;
+  }
+  .work__feedback-author {
+    padding-top: 50px;
+    margin-bottom: 35px;
+  }
+  .work__item-content {
+    float: right;
+    width: 269px;
+    height: 256px;
+    overflow: hidden;
+    border: 1px solid #e5ddd5;
+    border-left: none;
+    padding: 0 50px;
+    padding-bottom: 35px;
+  }
+  .work__feedback-content {
+    height: 90px;
+    overflow: hidden;
+  }
+  .work__item--featured {
+    .work__item-image {
+      height: 480px;
+      img {
+        width: 270px;
+        height: 480px;
+      }
+    }
+    .work__item-content {
+      padding-bottom: 30px;
+      height: 448px;
+      overflow: hidden;
+    }
+    .work__feedback-content {
+      height: 255px;
+      overflow: hidden;
+    }
+  }
+  .work__service-item {
+    width: 90px;
+  }
+}
+
+@media ($desktop-width) {
+  .work {
+    padding-bottom: 70px;
+  }
+  .work__item {
+    width: 294px;
+    float: left;
+    margin-right: 39px;
+  }
+  .work__item:last-of-type {
+    margin-right: 0;
+  }
+  .work__item-image {
+    float: none;
+    width: 294px;
+    height: 294px;
+    img {
+      width: 294px;
+      height: 294px;
+    }
+  }
+  .work__feedback-author {
+    padding-top: 35px;
+  }
+  .work__item-content {
+    float: none;
+    width: 227px;
+    height: 217px;
+    overflow: hidden;
+    border: 1px solid #e5ddd5;
+    border-top: none;
+    padding: 0 30px 0 35px;
+    padding-bottom: 30px;
+  }
+  .work__feedback-content {
+    height: 80px;
+    overflow: hidden;
+  }
+  .work__service-item {
+    width: 70px;
+    margin-right: 17px;
+  }
+  .work__service-item:last-of-type {
+    margin-right: 0;
+  }
+  .work__item--featured {
+    width: 960px;
+    float: none;
+    .work__item-image {
+      width: 480px;
+      float: left;
+      img {
+        width: 480px;
+        height: 480px;
+      }
+    }
+    .work__item-content {
+      float: right;
+      height: 453px;
+      width: 399px;
+      padding: 0 40px;
+      padding-bottom: 25px;
+      border: 1px solid #e5ddd5;
+      border-left: none;
+      overflow: hidden;
+    }
+    .work__feedback-author {
+      padding-top: 130px;
+      margin-bottom: 30px;
+    }
+    .work__feedback-content {
+      padding-right: 100px;
+      height: 215px;
+    }
+  }
+
+}

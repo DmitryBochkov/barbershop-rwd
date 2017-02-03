@@ -2,26 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Barbershop Borodinski</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Барбершоп «Бородинский» — истинно мужская классика</h1>
       <div class="page-header__logo">
-        <img src="img/logo.svg" width="370" height="153" alt="Barbershop Borodinski" />
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-mobile.svg" width="370" height="153" alt="Barbershop Borodinski" />
+        </picture>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item main-nav__item--active"><a href="#"><span>Наши </span>работы</a></li>
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item main-nav__item--active"><a><span>Наши </span>работы</a></li>
             <li class="main-nav__item"><a href="#">Записаться</a></li>
             <li class="main-nav__item"><a href="#">Контакты</a></li>
             <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
           </ul>
           <ul class="main-nav__user-items">
-            <li class="main-nav__user-item"><a class="main-nav__user-login" href="#" title="Войти">Вход</a></li>
+            <li class="main-nav__user-item">
+              <a id="user-login" class="main-nav__user-login" href="#login-form" title="Войти">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #fff;
+                        fill-rule: evenodd;
+                        opacity: 0.3;
+                      }
+                    </style>
+                  </defs>
+                  <path id="In_alt_copy_7" data-name="In (alt) copy 7" class="cls-1" d="M1093,129v14a1,1,0,0,1-1,1h-7a1,1,0,0,1,0-2h6V130h-6a1,1,0,0,1,0-2h7A1,1,0,0,1,1093,129Zm-16,7a1,1,0,0,1,1-1h9a1,1,0,1,1,0,2h-9A1,1,0,0,1,1077,136Zm9,1v-2h2v2h-2Zm-2,3,4-4-4-4v8Z" transform="translate(-1077 -128)"/>
+                </svg>
+                Вход
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -33,63 +55,87 @@
             <h1 class="main-header__slogan">наши работы</h1>
             <a class="btn btn--main-header" href="index.html">На главную</a>
           </header>
-          <article class="work__item work__featured-item">
-            <div class="work__featured-item-image">
-              <img src="http://placehold.it/280x480">
+          <article class="work__item work__item--featured">
+            <div class="work__item-image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/featured-work-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/featured-work-tablet.jpg">
+                <img src="img/featured-work-mobile.jpg" width="280" height="480" alt="Лжепётр Мчиславский" />
+              </picture>
             </div>
-            <div class="work__feedback">
-              <cite class="work__feedback-author">Лжепётр Мчиславский</cite>
-              <blockquote class="work__feedback-content">
-                Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!
-              </blockquote>
-            </div>
-            <div class="work__services">
-              <span class="work__service-item work__service-item--haircut">Стрижка</span>
-              <span class="work__service-item work__service-item--shaving">Бритье</span>
-              <span class="work__service-item work__service-item--moustache">Усы</span>
+            <div class="work__item-content">
+              <div class="work__feedback">
+                <cite class="work__feedback-author">Лжепётр Мчиславский</cite>
+                <blockquote class="work__feedback-content">
+                  Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!
+                </blockquote>
+              </div>
+              <div class="work__services">
+                <div class="work__service-item work__service-item--haircut">Стрижка</div>
+                <div class="work__service-item work__service-item--shaving">Бритье</div>
+                <div class="work__service-item work__service-item--moustache">Усы</div>
+              </div>
             </div>
           </article>
           <article class="work__item">
             <div class="work__item-image">
-              <img src="http://placehold.it/280x176">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/work1-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/work1-tablet.jpg">
+                <img src="img/work1-mobile.jpg" width="280" height="176" alt="Саша Мальцев" />
+              </picture>
             </div>
-            <div class="work__feedback">
-              <cite class="work__feedback-author">Саша Мальцев</cite>
-              <blockquote class="work__feedback-content">
-                Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
-              </blockquote>
-            </div>
-            <div class="work__services">
-              <span class="work__service-item work__service-item--haircut">Стрижка</span>
-            </div>
-          </article>
-          <article class="work__item">
-            <div class="work__item-image">
-              <img src="http://placehold.it/280x176">
-            </div>
-            <div class="work__feedback">
-              <cite class="work__feedback-author">Владимир Иваныч</cite>
-              <blockquote class="work__feedback-content">
-                К зимнему сезону — готов!
-              </blockquote>
-            </div>
-            <div class="work__services">
-              <span class="work__service-item work__service-item--shaving">Бритье</span>
-              <span class="work__service-item work__service-item--moustache">Усы</span>
+            <div class="work__item-content">
+              <div class="work__feedback">
+                <cite class="work__feedback-author">Саша Мальцев</cite>
+                <blockquote class="work__feedback-content">
+                  Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
+                </blockquote>
+              </div>
+              <div class="work__services">
+                <span class="work__service-item work__service-item--haircut">Стрижка</span>
+              </div>
             </div>
           </article>
           <article class="work__item">
             <div class="work__item-image">
-              <img src="http://placehold.it/280x176">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/work2-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/work2-tablet.jpg">
+                <img src="img/work2-mobile.jpg" width="280" height="176" alt="Владимир Иваныч" />
+              </picture>
             </div>
-            <div class="work__feedback">
-              <cite class="work__feedback-author">Винстон Синий</cite>
-              <blockquote class="work__feedback-content">
-                Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!
-              </blockquote>
+            <div class="work__item-content">
+              <div class="work__feedback">
+                <cite class="work__feedback-author">Владимир Иваныч</cite>
+                <blockquote class="work__feedback-content">
+                  К зимнему сезону — готов!
+                </blockquote>
+              </div>
+              <div class="work__services">
+                <span class="work__service-item work__service-item--shaving">Бритье</span>
+                <span class="work__service-item work__service-item--moustache">Усы</span>
+              </div>
             </div>
-            <div class="work__services">
-              <span class="work__service-item work__service-item--haircut">Стрижка</span>
+          </article>
+          <article class="work__item">
+            <div class="work__item-image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/work3-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/work3-tablet.jpg">
+                <img src="img/work3-mobile.jpg" width="280" height="176" alt="Винстон Синий" />
+              </picture>
+            </div>
+            <div class="work__item-content">
+              <div class="work__feedback">
+                <cite class="work__feedback-author">Винстон Синий</cite>
+                <blockquote class="work__feedback-content">
+                  Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!
+                </blockquote>
+              </div>
+              <div class="work__services">
+                <span class="work__service-item work__service-item--haircut">Стрижка</span>
+              </div>
             </div>
           </article>
         </div>
@@ -165,5 +211,6 @@
         </section>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

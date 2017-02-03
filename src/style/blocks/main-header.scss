@@ -1,0 +1,44 @@
+.main-header {
+  background-color: inherit;
+  color: inherit;
+  width: 87.5%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.main-header__slogan {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.btn--main-header {
+  display: none;
+}
+
+@media ($tablet-width) {
+  .main-header {
+    @include clearfix;
+    width: 640px;
+    margin: 0 auto;
+  }
+  .main-header__slogan {
+    float: left;
+    margin-bottom: 45px;
+    text-align: left;
+  }
+  .btn--main-header {
+    display: flex;
+    float: right;
+  }
+}
+@media ($desktop-width) {
+  .main-header {
+    width: 960px;
+  }
+  .main-header__slogan {
+    margin-bottom: 85px;
+  }
+}

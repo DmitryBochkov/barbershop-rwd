@@ -64,6 +64,9 @@ gulp.task('js:build', function () {
 gulp.task('style:build', function () {
   gulp.src(path.src.style) //Выберем наш main.scss
     .pipe(sass()) //Скомпилируем
+     .on('error', function (err) {
+        console.error('Error!', err.message);
+    })
     .pipe(prefixer({
             browsers: ['last 30 versions']
         })) //Добавим вендорные префиксы

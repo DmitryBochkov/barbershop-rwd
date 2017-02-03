@@ -19,10 +19,12 @@
   background-color: #f8f5f2;
   color: #000;
 }
+.btn--main-header:hover,
 .btn--reviews:hover,
 .btn--news:hover {
   border-color: #d5c9bd;
 }
+.btn--main-header:active,
 .btn--reviews:active,
 .btn--news:active {
   background-color: #d5c9bd;
