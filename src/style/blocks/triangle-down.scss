@@ -20,7 +20,22 @@
   stroke: #f8f5f2;
   stroke-width: 2;
 }
-
+.work .triangle-down {
+  background: #353535;
+}
+.work #bigTriangleColor path {
+  fill: #f8f5f2;
+  stroke: #f8f5f2;
+  stroke-width: 2;
+}
+.price .triangle-down {
+  background: #292929;
+}
+.price #bigTriangleColor path {
+  fill: #353535;
+  stroke: #353535;
+  stroke-width: 2;
+}
 @media ($tablet-width) {
   .triangle-down {
     height: 50px;
@@ -34,6 +49,9 @@
   .reviews .triangle-down {
     display: none;
   }
+  .price .triangle-down {
+    display: none;
+  }
 }
 
 @media ($desktop-width) {
@@ -45,5 +63,8 @@
   }
   .advantages #bigTriangleColor path {
     d: path("M0 0 L50 100 L100 0 Z");
+  }
+  .work .triangle-down {
+    display: none;
   }
 }

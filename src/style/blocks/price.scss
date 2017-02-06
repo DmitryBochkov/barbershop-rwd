@@ -1,0 +1,163 @@
+.price {
+  background-color: #353535;
+  color: #fff;
+}
+.price__wrapper {
+  @include container-fluid;
+  @include clearfix;
+  padding-bottom: 10px;
+}
+.price__header {
+  padding-top: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.price__table {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  font-size: 20px;
+  line-height: 27px;
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  td {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+  .price__table-col-1 {
+    display: none;
+  }
+  .price__table-col-2 {
+    flex-basis: 210px;
+    font-weight: 700;
+  }
+  .price__table-col-3 {
+    order: 1;
+  }
+  .price__table-col-4 {
+    flex-basis: 70px;
+    letter-spacing: -0.3px;
+  }
+}
+.price__discount {
+  position: relative;
+  width: 163px;
+  padding: 17px 0 18px;
+  padding-left: 115px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  span {
+    display: block;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    @include sprite($clock-illustration-mobile);
+    top: 15px;
+    left: 20px;
+  }
+}
+
+@media ($tablet-width) {
+  .price {
+    padding-bottom: 55px;
+  }
+  .price__header {
+    text-align: left;
+    margin-bottom: 45px;
+  }
+  .price__table {
+    width: 640px;
+    margin-bottom: 10px;
+    tr {
+      display: table-row;
+      height: 56px;
+    }
+    td {
+      display: table-cell;
+      padding-left: 20px;
+      text-align: left;
+      vertical-align: middle;
+      border: 1px solid #4a4a4a;
+    }
+    .price__table-col-1 {
+      display: table-cell;
+      width: 71px;
+      padding: 0;
+      text-align: center;
+    }
+    .price__table-col-2 {
+      width: 229px;
+    }
+    .price__table-col-3 {
+      width: 139px;
+      span {
+        display: none;
+      }
+    }
+    .price__table-col-4 {
+      width: 140px;
+    }
+  }
+  .price__discount {
+    width: 453px;
+    padding: 41px 0 41px;
+    padding-left: 185px;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: uppercase;
+    span {
+      display: inline;
+    }
+    &::before {
+      @include sprite($clock-illustration-tablet);
+      top: 18px;
+      left: 25px;
+    }
+  }
+}
+@media ($desktop-width) {
+  .price {
+    padding-top: 40px;
+  }
+  .price__table-wrappper {
+    float: left;
+  }
+  .price__table {
+    width: 630px;
+    .price__table-col-4 {
+      width: 126px;
+    }
+  }
+  .price__discount {
+    float: right;
+    width: 268px;
+    padding: 0;
+    padding-top: 200px;
+    padding-bottom: 25px;
+    margin: 0;
+    text-transform: inherit;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    span {
+      display: block;;
+    }
+    &::before {
+      @include sprite($clock-illustration-desktop);
+      top: 30px;
+      left: 65px;
+    }
+  }
+}

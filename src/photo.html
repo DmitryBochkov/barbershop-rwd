@@ -56,6 +56,7 @@
             <a class="btn btn--main-header" href="index.html">На главную</a>
           </header>
           <article class="work__item work__item--featured">
+            <div class="work__item-flag">Работа месяца</div>
             <div class="work__item-image">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/featured-work-desktop.jpg">
@@ -139,6 +140,7 @@
             </div>
           </article>
         </div>
+        //= templates/triangle-down.html
       </section>
       <section class="price">
         <div class="price__wrapper">
@@ -148,69 +150,55 @@
               <tr>
                 <td class="price__table-col-1">1</td>
                 <td class="price__table-col-2">Классическая стрижка</td>
-                <td class="price__table-col-3">с мытьём головы</td>
+                <td class="price__table-col-3">
+                  <span class="price__table-dash">(</span>с мытьём головы<span class="price__table-dash">)</span>
+                </td>
                 <td class="price__table-col-4">1&nbsp;500 руб.</td>
               </tr>
               <tr>
                 <td class="price__table-col-1">2</td>
                 <td class="price__table-col-2">Современный вариант</td>
-                <td class="price__table-col-3">с мытьём головы</td>
+                <td class="price__table-col-3">
+                  <span class="price__table-dash">(</span>с мытьём головы<span class="price__table-dash">)</span>
+                </td>
                 <td class="price__table-col-4">1&nbsp;500 руб.</td>
               </tr>
               <tr>
                 <td class="price__table-col-1">3</td>
                 <td class="price__table-col-2">Индивидуальный подход</td>
-                <td class="price__table-col-3">с мытьём головы</td>
+                <td class="price__table-col-3">
+                  <span class="price__table-dash">(</span>с мытьём головы<span class="price__table-dash">)</span>
+                </td>
                 <td class="price__table-col-4">2&nbsp;000 руб.</td>
               </tr>
               <tr>
                 <td class="price__table-col-1">4</td>
                 <td class="price__table-col-2">Бритьё бороды</td>
-                <td class="price__table-col-3">без мытья</td>
+                <td class="price__table-col-3">
+                  <span class="price__table-dash">(</span>без мытья<span class="price__table-dash">)</span>
+                </td>
                 <td class="price__table-col-4">500 руб.</td>
               </tr>
               <tr>
                 <td class="price__table-col-1">5</td>
                 <td class="price__table-col-2">Бритьё головы</td>
-                <td class="price__table-col-3">с мытьём головы</td>
+                <td class="price__table-col-3">
+                  <span class="price__table-dash">(</span>с мытьём головы<span class="price__table-dash">)</span>
+                </td>
                 <td class="price__table-col-4">1&nbsp;000 руб.</td>
               </tr>
             </table>
-            <p class="price__discount">
-              <span class="price__discount-time">С&nbsp;10:00&nbsp;до&nbsp;14:00</span>
-              <span class="price__discount-amount">скидка&nbsp;20%</span>
-            </p>
           </div>
+          <p class="price__discount">
+            <span class="price__discount-time">С&nbsp;10:00&nbsp;до&nbsp;14:00</span>
+            <span class="price__discount-amount">скидка&nbsp;20%</span>
+          </p>
         </div>
+        //= templates/triangle-down.html
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <section class="page-footer__contacts">
-          <b>Барбершоп Бородинский</b><br>
-          <p>
-            г. Санкт-Петербург, ул. Б. Конюшенная 19/8<br>
-            <a href="tel:+74954954545" class="phone"><span class="page-footer__contacts-hidden">Тел.</span>+7 (495) 555-66-66</a>
-          </p>
-        </section>
-        <section class="page-footer__social">
-          <p>
-            Давайте дружить!
-          </p>
-          <span class="social-links">
-            <a href="#" class="social-link social-link--vk">Мы ВКонтакт</a>
-            <a href="#" class="social-link social-link--fb">Мы на Facebook</a>
-            <a href="#" class="social-link social-link--inst">Мы в Инстаграмме</a>
-          </span>
-        </section>
-        <section class="page-footer__copyright">
-          <p>
-            Разработано:
-          </p>
-          <a class="btn page-footer__copyright-link" href="#">HTML Academy</a><br>
-        </section>
-      </div>
-    </footer>
+    //= templates/footer.html
+
     <script src="js/main.js"></script>
   </body>
 </html>
