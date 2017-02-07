@@ -36,6 +36,11 @@
   stroke: #353535;
   stroke-width: 2;
 }
+.page-header--inner {
+  .triangle-down {
+    display: none;
+  }
+}
 @media ($tablet-width) {
   .triangle-down {
     height: 50px;
@@ -51,6 +56,13 @@
   }
   .price .triangle-down {
     display: none;
+  }
+  .page-header--inner {
+    .triangle-down {
+      display: block;
+      order: 3;
+      background: $bg-lightgrey;
+    }
   }
 }
 

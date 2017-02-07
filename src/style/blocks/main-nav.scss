@@ -27,7 +27,7 @@
 .main-nav--closed .main-nav__toggle::before {
   content: '';
   position: absolute;
-  top: 15px;
+  top: 16px;
   left: 17px;
   width: 36px;
   height: 2px;
@@ -96,6 +96,9 @@
     background-color: #6a4d38;
     border-top-color: #6a4d38;
   }
+}
+.main-nav__item--active span {
+  display: none;
 }
 .main-nav__user-login {
   display: block;
@@ -226,6 +229,9 @@
       background-color: #000;
       opacity: 0.3;
     }
+  }
+  .main-nav__item--active span {
+    display: inline;
   }
   .main-nav__user-login {
     width: 60px;

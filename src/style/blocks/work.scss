@@ -5,13 +5,13 @@
 }
 .work__wrapper {
   @include container-fluid;
+  padding-bottom: 5px;
 }
 .work__item {
   position: relative;
   width: 280px;
   margin: 0 auto;
   margin-bottom: 20px;
-  padding-bottom: 20px;
   img {
     display: block;
   }
@@ -19,17 +19,17 @@
 .work__item-content{
   border: 1px solid #e5ddd5;
   border-top: none;
-  padding: 0 20px;
   padding-bottom: 20px;
 }
-.work__item--featured .work__item-content{
-  padding-bottom: 10px;
-}
 
+.work__feedback {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .work__feedback-author {
   display: block;
-  padding-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 24px;
+  margin-bottom: 15px;
   font-size: 24px;
   font-weight: 700;
   line-height: 27px;
@@ -37,20 +37,21 @@
 }
 .work__feedback-content {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .work__services {
   font-size: 0;
+  padding-left: 20px;
 }
 .work__service-item {
   position: relative;
   display: inline-block;
   vertical-align: top;
   width: 80px;
-  padding-left: 35px;
+  padding-left: 47px;
   font-size: 16px;
-  line-height: 37px;
-  height: 37px;
+  line-height: 40px;
+  height: 40px;
   text-transform: uppercase;
 }
 .work__service-item::before {
@@ -59,18 +60,18 @@
 }
 .work__service-item--haircut::before {
   @include sprite($scissors-icon);
-  top: 7px;
-  left: 0px;
+  top: 9px;
+  left: 1px;
 }
 .work__service-item--shaving::before {
   @include sprite($beard-icon);
   top: 7px;
-  left: 0px;
+  left: 3px;
 }
 .work__service-item--moustache::before {
   @include sprite($mustache-icon);
-  top: 11px;
-  left: -15px;
+  top: 13px;
+  left: -12px;
 }
 .work__item-flag {
   position: absolute;
@@ -97,10 +98,22 @@
   border-bottom: 25px solid #826550;
   border-right: 10px solid transparent;
 }
+.work__item--featured {
+  .work__item-content {
+    padding-bottom: 10px;
+  }
+  .work__feedback-author {
+    padding-top: 18px;
+  }
+}
 @media ($tablet-width) {
+  .work__wrapper {
+    padding-bottom: 15px;
+  }
   .work__item {
     @include clearfix;
     width: 640px;
+    margin-bottom: 40px;
   }
   .work__item-image {
     float: left;
@@ -108,22 +121,27 @@
     height: 293px;
     overflow: hidden;
   }
+  .work__feedback {
+    padding-right: 70px;
+  }
   .work__feedback-author {
-    padding-top: 50px;
-    margin-bottom: 35px;
+    padding-top: 15px;
+    margin-bottom: 26px;
   }
   .work__item-content {
-    float: right;
+    float: left;
     width: 269px;
-    height: 256px;
+    width: 339px;
     overflow: hidden;
     border: 1px solid #e5ddd5;
     border-left: none;
-    padding: 0 50px;
+    padding-left: 30px;
+    padding-right: 0;
+    padding-top: 25px;
     padding-bottom: 35px;
   }
   .work__feedback-content {
-    height: 90px;
+    height: 115px;
     overflow: hidden;
   }
   .work__item--featured {
@@ -134,28 +152,34 @@
         height: 480px;
       }
     }
+    .work__feedback {
+      padding-right: 48px;
+    }
     .work__item-content {
-      padding-bottom: 30px;
+      padding-bottom: 5px;
       height: 448px;
       overflow: hidden;
     }
     .work__feedback-content {
-      height: 255px;
+      height: 266px;
       overflow: hidden;
     }
   }
   .work__service-item {
     width: 90px;
+    padding-left: 42px;
   }
   .work__item-flag {
-    top: 37px;
+    top: 35px;
     left: -3px;
+    width: 147px;
+    padding-left: 21px;
   }
 }
 
 @media ($desktop-width) {
   .work {
-    padding-bottom: 70px;
+    padding-bottom: 47px;
   }
   .work__item {
     width: 294px;
@@ -175,7 +199,11 @@
     }
   }
   .work__feedback-author {
-    padding-top: 35px;
+    padding-top: 30px;
+  }
+  .work__feedback {
+    padding-left: 0;
+    padding-right: 0;
   }
   .work__item-content {
     float: none;
@@ -188,12 +216,16 @@
     padding-bottom: 30px;
   }
   .work__feedback-content {
-    height: 80px;
+    height: 90px;
     overflow: hidden;
+  }
+  .work__services {
+    padding-left: 0;
   }
   .work__service-item {
     width: 70px;
-    margin-right: 17px;
+    padding-left: 35px;
+    margin-right: 15px;
   }
   .work__service-item:last-of-type {
     margin-right: 0;
@@ -221,16 +253,23 @@
     }
     .work__feedback-author {
       padding-top: 130px;
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
     .work__feedback-content {
-      padding-right: 100px;
-      height: 215px;
+      padding-right: 50px;
+      height: 225px;
+    }
+    .work__service-item {
+      width: 70px;
+      margin-right: 17px;
+      padding-left: 42px;
     }
   }
   .work__item-flag {
-    top: 25px;
-    left: 792px;
+    top: 26px;
+    left: 793px;
+    padding-left: 23px;
+    width: 144px;
   }
   .work__item-flag::after {
     left: -10px;

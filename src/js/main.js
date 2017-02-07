@@ -13,6 +13,40 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+// Login-form
+var loginForm = document.querySelector('#login-form');
+var loginFormLink = document.querySelector('#user-login');
+var overlay = document.querySelector('.modal-overlay');
+var loginFormCloseBtn = document.querySelector('#close-btn');
+
+
+loginForm.classList.remove('login-form--nojs');
+
+loginFormLink.addEventListener('click', function(e) {
+  e.preventDefault();
+  if (loginForm.classList.contains('login-form--closed')) {
+    loginForm.classList.remove('login-form--closed');
+    loginForm.classList.add('login-form--opened');
+    overlay.style.display = 'block';
+  }
+});
+loginFormCloseBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+  if (loginForm.classList.contains('login-form--opened')) {
+    loginForm.classList.remove('login-form--opened');
+    loginForm.classList.add('login-form--closed');
+    overlay.style.display = 'none';
+  }
+});
+overlay.addEventListener('click', function() {
+  if (loginForm.classList.contains('login-form--opened')) {
+    loginForm.classList.remove('login-form--opened');
+    loginForm.classList.add('login-form--closed');
+  }
+  overlay.style.display = 'none';
+});
+
+
 function Slider(obj) {
   var slideIndex = 1;
   var slides = document.querySelectorAll(obj.slideSelector);
@@ -68,37 +102,4 @@ var reviewSlider = new Slider({
   dotsSelector: '.reviews .slider__toggle',
   prevButtonSelector: '.reviews__prev',
   nextButtonSelector: '.reviews__next'
-});
-
-// Login-form
-var loginForm = document.querySelector('#login-form');
-var loginFormLink = document.querySelector('#user-login');
-var overlay = document.querySelector('.modal-overlay');
-var loginFormCloseBtn = document.querySelector('#close-btn');
-
-
-loginForm.classList.remove('login-form--nojs');
-
-loginFormLink.addEventListener('click', function(e) {
-  e.preventDefault();
-  if (loginForm.classList.contains('login-form--closed')) {
-    loginForm.classList.remove('login-form--closed');
-    loginForm.classList.add('login-form--opened');
-    overlay.style.display = 'block';
-  }
-});
-loginFormCloseBtn.addEventListener('click', function(e) {
-  e.preventDefault();
-  if (loginForm.classList.contains('login-form--opened')) {
-    loginForm.classList.remove('login-form--opened');
-    loginForm.classList.add('login-form--closed');
-    overlay.style.display = 'none';
-  }
-});
-overlay.addEventListener('click', function() {
-  if (loginForm.classList.contains('login-form--opened')) {
-    loginForm.classList.remove('login-form--opened');
-    loginForm.classList.add('login-form--closed');
-  }
-  overlay.style.display = 'none';
 });

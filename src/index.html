@@ -13,7 +13,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img src="img/logotype-mobile.svg" width="370" height="153" alt="Barbershop Borodinski" />
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="370" height="153" alt="Barbershop Borodinski" />
         </picture>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -207,19 +207,7 @@
       </section>
     </main>
     //= templates/footer.html
-    <div id="login-form" class="login-form login-form--closed login-form--nojs">
-      <form action="#" method="post">
-        <h2 class="login-form__title">ЛИЧНЫЙ КАБИНЕТ</h2>
-        <p class="login-form__content">Введите свой логин и пароль, чтобы войти</p>
-        <span class="input-login-icon"><input class="input-login" type="text" name="login" placeholder="Логин" required></span>
-        <span class="password-login-icon"><input class="input-password" type="password" name="password" placeholder="Пароль" required></span>
-        <input id="remember" type=checkbox name="remember">
-        <label for="remember">Запомните меня</label>
-        <a href="#0" class="forgot-password">Я забыл пароль!</a>
-        <input class="btn btn--login-form" type="submit" name="submit" value="Войти">
-        <button id="close-btn" class="btn close-btn">ЗАКРЫТЬ</button>
-      </form>
-    </div>
+    //= templates/login-form.html
     <div class="modal-overlay"></div>
     <script src="js/main.js"></script>
   </body>

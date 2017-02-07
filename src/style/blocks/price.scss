@@ -5,12 +5,12 @@
 .price__wrapper {
   @include container-fluid;
   @include clearfix;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
 }
 .price__header {
   padding-top: 30px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
@@ -20,13 +20,14 @@
 .price__table {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   border-collapse: collapse;
   font-size: 20px;
   line-height: 27px;
   tr {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 15px;
   }
   td {
     flex: 1;
@@ -50,10 +51,11 @@
 }
 .price__discount {
   position: relative;
-  width: 163px;
+  width: 166px;
   padding: 17px 0 18px;
-  padding-left: 115px;
+  padding-left: 112px;
   margin: 0 auto;
+  letter-spacing: 0.75px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   span {
     display: block;
@@ -69,18 +71,21 @@
 
 @media ($tablet-width) {
   .price {
-    padding-bottom: 55px;
+    padding-bottom: 45px;
   }
   .price__header {
     text-align: left;
-    margin-bottom: 45px;
+    margin-bottom: 54px;
+    padding-top: 45px;
+    font-size: 40px;
+    line-height: 30px;
   }
   .price__table {
     width: 640px;
     margin-bottom: 10px;
     tr {
       display: table-row;
-      height: 56px;
+      height: 55px;
     }
     td {
       display: table-cell;
@@ -110,32 +115,35 @@
   }
   .price__discount {
     width: 453px;
-    padding: 41px 0 41px;
+    padding: 41px 0 42px;
     padding-left: 185px;
     margin: 0 auto;
     font-size: 30px;
     font-weight: 700;
     line-height: 27px;
+    letter-spacing: 0.1px;
     text-transform: uppercase;
     span {
       display: inline;
     }
     &::before {
       @include sprite($clock-illustration-tablet);
-      top: 18px;
-      left: 25px;
+      top: 20px;
+      left: 26px;
     }
   }
 }
 @media ($desktop-width) {
   .price {
-    padding-top: 40px;
+    padding-top: 38px;
+    padding-bottom: 70px;
   }
   .price__table-wrappper {
     float: left;
   }
   .price__table {
     width: 630px;
+    margin-bottom: 0;
     .price__table-col-4 {
       width: 126px;
     }
@@ -145,7 +153,7 @@
     width: 268px;
     padding: 0;
     padding-top: 200px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     margin: 0;
     text-transform: inherit;
     font-weight: 400;
@@ -156,8 +164,8 @@
     }
     &::before {
       @include sprite($clock-illustration-desktop);
-      top: 30px;
-      left: 65px;
+      top: 34px;
+      left: 64px;
     }
   }
 }

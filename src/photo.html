@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--inner">
       <div class="page-header__logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-          <img src="img/logotype-mobile.svg" width="370" height="153" alt="Barbershop Borodinski" />
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="370" height="153" alt="Barbershop Borodinski" />
+        </picture>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/angle-div-desktop.png">
+          <img class="page-header__separator" src="img/angle-div-tablet.png" alt="">
         </picture>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -198,7 +202,8 @@
       </section>
     </main>
     //= templates/footer.html
-
+    //= templates/login-form.html
+    <div class="modal-overlay"></div>
     <script src="js/main.js"></script>
   </body>
 </html>
