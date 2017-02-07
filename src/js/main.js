@@ -90,16 +90,18 @@ function Slider(obj) {
   });
   showSlides(slideIndex);
 }
-
-var advantageSlider = new Slider({
-  slideSelector: '.advantages__item',
-  dotsSelector: '.advantages .slider__toggle',
-  prevButtonSelector: '.advantages .prev',
-  nextButtonSelector: '.advantages .next'
-});
-var reviewSlider = new Slider({
-  slideSelector: '.reviews__item',
-  dotsSelector: '.reviews .slider__toggle',
-  prevButtonSelector: '.reviews__prev',
-  nextButtonSelector: '.reviews__next'
-});
+if (document.querySelector('.slider')) {
+  console.log('test');
+  var advantageSlider = new Slider({
+    slideSelector: '.advantages__item',
+    dotsSelector: '.advantages .slider__toggle',
+    prevButtonSelector: '.advantages .prev',
+    nextButtonSelector: '.advantages .next'
+  });
+  var reviewSlider = new Slider({
+    slideSelector: '.reviews__item',
+    dotsSelector: '.reviews .slider__toggle',
+    prevButtonSelector: '.reviews__prev',
+    nextButtonSelector: '.reviews__next'
+  });
+}
