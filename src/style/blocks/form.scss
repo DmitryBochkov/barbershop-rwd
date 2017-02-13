@@ -1,0 +1,99 @@
+.form {
+  background-color: $bg-lightgrey;
+  color: $font-color-black;
+}
+.firm-wrapper {
+  @include container-fluid;
+}
+.main-form {
+  padding: 20px;
+  padding-top: 10px;
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+}
+.personal-info input,
+.contact-info input {
+  margin-bottom: 7px;
+  height: 50px;
+}
+.personal-info input,
+.contact-info input,
+.additional-info textarea {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  padding-left: 20px;
+  background-color: #fff;
+  font-family: $font-family;
+  color: $font-color-black;
+  border: 1px solid #e5ddd5;
+}
+.additional-info textarea {
+  padding-top: 15px;
+  height: 112px;
+  resize: none;
+}
+@media ($tablet-width) {
+   .main-form {
+     padding-left: 65px;
+     padding-right: 65px;
+     fieldset {
+     font-size: 24px;
+     margin-bottom: 0;
+     }
+     .personal-info {
+       font-size: 0;
+     }
+   }
+   .personal-info input {
+     font-size: 24px;
+      display: inline-block;
+      vertical-align: top;
+      width: (100% / 3);
+   }
+   .personal-info input,
+   .contact-info input {
+     height: 70px;
+   }
+   .personal-info input,
+   .contact-info input,
+   .additional-info textarea {
+     padding-left: 25px;
+     margin-bottom: 37px;
+   }
+   .additional-info textarea {
+     height: 211px;
+   }
+ }
+
+ @media ($desktop-width) {
+   .main-form {
+     padding-left: 0;
+     padding-right: 0;
+     width: 960px;
+     margin: 0 auto;
+     .personal-info input {
+       width: 295px;
+     }
+     .personal-info input:nth-of-type(2) {
+       margin-left: 37px;
+       margin-right: 37px;
+     }
+     .contact-info {
+       font-size: 0;
+     }
+     .contact-info input {
+       font-size: 24px;
+       width: 462px;
+       display: inline-block;
+       vertical-align: top;
+     }
+     .contact-info input:first-child {
+       margin-right: 36px;
+     }
+   }
+ }
