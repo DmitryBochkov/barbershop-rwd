@@ -41,6 +41,17 @@
     display: none;
   }
 }
+.order-form {
+  .triangle-down {
+    background-color: $bg-darkgrey;
+  }
+  .triangle-down path {
+    fill: $bg-lightgrey;
+    stroke: $bg-lightgrey;
+    stroke-width: 2;
+    d: path('M-10 -2 L50 90 L110 0 Z');
+  }
+}
 @media ($tablet-width) {
   .triangle-down {
     height: 50px;
@@ -62,6 +73,11 @@
       display: block;
       order: 3;
       background: $bg-lightgrey;
+    }
+  }
+  .order-form {
+    .triangle-down {
+      display: none;
     }
   }
 }

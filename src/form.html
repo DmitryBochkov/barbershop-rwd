@@ -6,6 +6,12 @@
     <title>Barbershop Borodinski</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <header class="page-header page-header--inner">
@@ -51,7 +57,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="order-form">
       <section class="form">
         <div class="form__wrapper">
           <header class="main-header">
@@ -72,7 +78,9 @@
               <textarea name="comment" placeholder="Доп. информация для мастера"></textarea>
             </fieldset>
             <fieldset class="beard-type">
-              <legend>ВЫберите модель бороды:</legend>
+              <div class="decor-line">
+                <legend>ВЫберите модель бороды:</legend>
+              </div>
               <input id="admiral" type="radio" name="beard" value="admiral">
               <label for="admiral">адмирал</label>
               <input id="woodcutter" type="radio" name="beard" value="woodcutter">
@@ -85,7 +93,9 @@
               <label for="wise-man">мудрец</label>
             </fieldset>
             <fieldset class="more-services">
-              <legend>Дополнительные услуги:</legend>
+              <div class="decor-line">
+                <legend>Дополнительные услуги:</legend>
+              </div>
               <input id="dye-beard" type="checkbox" name="dye-beard">
               <label for="dye-beard">Подкрасить бороду</label>
               <input id="twist moustache" type="checkbox" name="twist moustache">
@@ -99,9 +109,10 @@
               <input id="polish-bald-head" type="checkbox" name="polish-bald-head">
               <label for="polish-bald-head">Отполировать лысину</label>
             </fieldset>
-            <input class="btn" type="submit" name="submit" value="Отправить заявку">
+            <input class="btn btn--main-form" type="submit" name="submit" value="Отправить заявку">
           </form>
         </div>
+        //= templates/triangle-down.html
       </section>
     </main>
     //= templates/footer.html

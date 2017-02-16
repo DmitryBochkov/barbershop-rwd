@@ -1,19 +1,23 @@
 .form {
   background-color: $bg-lightgrey;
   color: $font-color-black;
+  .main-header {
+    padding-top: 21px;
+  }
 }
-.firm-wrapper {
+.form-wrapper {
   @include container-fluid;
 }
 //Text inputs
 .main-form {
   padding: 20px;
-  padding-top: 10px;
+  padding-top: 9px;
+  padding-bottom: 33px;
   fieldset {
     border: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 }
 .personal-info input,
@@ -33,40 +37,56 @@
   color: $font-color-black;
   border: 1px solid #e5ddd5;
 }
+.main-form input:hover,
+.additional-info textarea:hover {
+  border-color: #d5c9bd;
+}
+.main-form input:focus,
+.additional-info textarea:focus {
+  border-color: #999;
+}
 .additional-info textarea {
   padding-top: 15px;
   height: 112px;
   resize: none;
 }
 
-//radio buttons
+//radio + checkbox buttons
+.beard-type legend,
+.more-services legend {
+  padding-top: 13px;
+  width: 100%;
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+.more-services legend {
+  margin-bottom: 21px;
+}
 .beard-type {
   font-size: 0;
-  legend {
-    width: 100%;
-    margin-bottom: 35px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 27px;
-    text-transform: uppercase;
-  }
+  margin-bottom: 30px;
   label {
     font-size: 18px;
     display: inline-block;
     vertical-align: top;
     width: (100% / 3);
     text-align: center;
-    padding-top: 70px;
-    padding-bottom: 125px;
+    padding-top: 61px;
+    padding-bottom: 120px;
     cursor: pointer;
     position: relative;
     &::before {
       content: '';
       position: absolute;
-      width: 52px;
-      height: 52px;
+      width: 51px;
+      height: 51px;
+      background-color: #fff;
+      border: 1px solid #e5ddd5;
+      border-radius: 50%;
       margin-left: -26px;
-      background: url(../img/radio-bullet-unchecked.svg);
       left: 50%;
       top: 0;
     }
@@ -74,7 +94,12 @@
       content: '';
       position: absolute;
       left: 50%;
-      top: 110px;
+      top: 100px;
+    }
+  }
+  label:hover {
+    &::before {
+      border-color: #d5c9bd;
     }
   }
   input[type="radio"] {
@@ -82,20 +107,120 @@
   }
   input[type=radio]:checked + label::before {
     content: '';
-    background: url(../img/radio-bullet.svg);
-    width: 52px;
-    height: 52px;
+    position: absolute;
+    background: url(../img/radio-bullet-checked.svg) no-repeat;
+    width: 51px;
+    height: 51px;
+    background-color: #fff;
+    border: 1px solid #e6ddd5;
+    border-radius: 50%;
+    background-position: center;
+  }
+  input[type=radio]:active + label::before {
+    background: url(../img/radio-bullet-checked.svg) no-repeat;
+    width: 51px;
+    height: 51px;
+    background-color: #d5c9bd;
+    border: 1px solid #e6ddd5;
+    border-radius: 50%;
+    background-position: center;
+  }
+  input[type=radio]:checked:hover + label::before {
+    border-color: #d5c9bd;
+  }
+  input[type=radio]:checked:active + label::before {
+    background: none;
+    background-color: #d5c9bd;
   }
   label[for="admiral"]::after {
     @include sprite($beard-admiral);
     margin-left: ($beard-admiral-width / -2);
   }
+  label[for="woodcutter"]::after {
+    @include sprite($beard-woodcutter);
+    margin-left: ($beard-woodcutter-width / -2);
+  }
+  label[for="polar"]::after {
+    @include sprite($beard-polar);
+    margin-left: ($beard-polar-width / -2);
+  }
+  label[for="boyar"]::after {
+    @include sprite($beard-boyar);
+    margin-left: ($beard-boyar-width / -2);
+  }
+  label[for="wise-man"]::after {
+    @include sprite($beard-wise-man);
+    margin-left: ($beard-wise-man-width / -2);
+  }
+}
+.main-form .more-services {
+  margin-bottom: 35px;
+  label {
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    padding: 15px;
+    padding-left: 60px;
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 36px;
+      height: 36px;
+      border: 1px solid #e5ddd5;
+      top: 10px;
+      left: 0;
+    }
+    &:hover::before {
+      border: 1px solid #d5c9bd;
+    }
+    &:active::before {
+      background: #d5c9bd url(../img/check-icon.png) no-repeat;
+      background-position: 8px 9px;
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"]:checked + label:before {
+    background: url(../img/check-icon.png) no-repeat;
+    background-position: 8px 9px;
+  }
+  input[type="checkbox"]:checked:active + label:before {
+    background: #d5c9bd;
+  }
+}
+.btn--main-form {
+  width: 100%;
+  height: 50px;
+  background-color: #826550;
+  color: #fff;
+  &:hover,
+  &:focus {
+    background-color: #6a4d38;
+  }
+  &:active {
+    background-color: #6a4d38;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:disabled {
+    background-color: #aeaeae;
+    color: #fff;
+  }
 }
 
 @media ($tablet-width) {
+  .form {
+    padding-top: 32px;
+    .main-header__slogan {
+      margin-bottom: 65px;
+    }
+  }
    .main-form {
      padding-left: 65px;
      padding-right: 65px;
+     padding-bottom: 75px;
      fieldset {
      font-size: 24px;
      margin-bottom: 0;
@@ -118,19 +243,64 @@
    .contact-info input,
    .additional-info textarea {
      padding-left: 25px;
-     margin-bottom: 37px;
+     margin-bottom: 35px;
    }
    .additional-info textarea {
      height: 211px;
    }
+
+   //radio buttons
+   .main-form {
+      .beard-type {
+        font-size: 0;
+        margin-bottom: 40px;
+   }
+   .beard-type legend,
+   .more-services legend {
+     font-size: 30px;
+     line-height: 30px;
+     padding-top: 18px;
+     margin-bottom: 45px;
+     }
+   }
+   .more-services legend {
+     padding-top: 15px;
+     margin-bottom: 60px;
+   }
+   .beard-type {
+     label {
+       padding-top: 77px;
+       padding-bottom: 138px;
+       font-size: 24px;
+       width: (100% / 5);
+       &::after {
+         top: 137px;
+       }
+     }
+   }
+   .main-form .more-services {
+      margin-bottom: 25px;
+      font-size: 0;
+      label {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        margin-bottom: 25px;
+        font-size: 24px;
+      }
+   }
+   .btn--main-form {
+     height: 70px;
+     font-size: 24px;
+     line-height: 30px;
+   }
  }
-
-
 
  @media ($desktop-width) {
    .main-form {
      padding-left: 0;
      padding-right: 0;
+     padding-bottom: 88px;
      width: 960px;
      margin: 0 auto;
      .personal-info input {
@@ -151,6 +321,20 @@
      }
      .contact-info input:first-child {
        margin-right: 36px;
+     }
+     .additional-info {
+       margin-bottom: 18px;
+     }
+     .beard-type {
+       legend {
+         margin-bottom: 50px;
+       }
+     }
+     .more-services {
+       margin-bottom: 43px;
+       label {
+         width: (100% / 3);
+       }
      }
    }
  }

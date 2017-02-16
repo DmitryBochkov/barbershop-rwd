@@ -1,0 +1,33 @@
+@media ($tablet-width) {
+  .decor-line {
+    position: relative;
+    &::before {
+      content: '';
+      position: relative;
+      display: block;
+      border-top: 1px solid rgba(0,0,0,0.05);
+      z-index: 1;
+      top: 30px;
+    }
+    legend {
+      display: inline-block;
+      padding-left: 25px;
+      padding-right: 25px;
+      width: initial;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      background: $bg-lightgrey;
+      z-index: 2;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .decor-line {
+    legend {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}

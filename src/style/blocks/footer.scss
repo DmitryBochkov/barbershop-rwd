@@ -101,7 +101,11 @@
   top: 31px;
   margin-left: -18px;
 }
-
+.page-footer--form {
+  .page-footer__copyright {
+    padding-bottom: 0;
+  }
+}
 @media ($tablet-width) {
   .page-footer__wrapper {
     flex-direction: row;
