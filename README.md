@@ -1,5 +1,5 @@
 # A sample 3-page website of a barbershop.
-Created on the basis of psd-temlates <a href="https://github.com/DmitryBochkov/barbershop-rwd/tree/master/templates-jpg" target="_blank">(view jpgs)</a>.
+Created on the basis of psd-templates <a href="https://github.com/DmitryBochkov/barbershop-rwd/tree/master/templates-jpg" target="_blank">(view jpgs)</a>.
 
 Features:
 <ul>
