@@ -6,5 +6,6 @@ Features:
   <li>mobile first;</li>
   <li>responsive design (mobile, tablet, desktop);</li>
   <li>pixel perfect PSD to HTML;</li>
-  <li>Javascript sliders, top mobile navigation bar and login form.</li>
+  <li>Javascript sliders, top mobile navigation bar and login form;</li>
+  <li>contains 3 pages: home, works, and order form.</li>
 </ul>
